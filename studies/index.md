@@ -31,8 +31,9 @@ devices) on the studies page.
 2. Press the `Share` button and a browser with this page will be opened, with
    the url already filled in.
 
-3. Give the device access to your study. At
-   `https://exporl.med.kuleuven.be/apex-study/` go to `Link device to study`.
+3. Give the device access to your study. At `https://exporl.med.kuleuven.be/apex-study/`,
+   make sure your device is in the list of available devices under `Devices`. 
+   If not, copy your ssh key and press submit to add it. Next, go to `Link device to study`.
    Click on a device (or multiple ones), select a study and one or more branches
    and press `Link`.
 
@@ -55,8 +56,9 @@ devices) on the studies page.
 2. Press the `Share` button and a browser with this page will be opened, with
    the url already filled in.
 
-3. Give the device access to your study. At
-   `https://exporl.med.kuleuven.be/apex-study/` go to `Link device to study`.
+3. Give the device access to your study. At `https://exporl.med.kuleuven.be/apex-study/`,
+   make sure your device is in the list of available devices under `Devices`. 
+   If not, copy your ssh key and press submit to add it. Next, go to `Link device to study`.
    Click on a device (or multiple ones), select a study and one or more branches
    and press `Link`.
 
