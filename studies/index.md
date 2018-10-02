@@ -99,6 +99,40 @@ subfolders) each time the study is started.
 If multiple flowrunners are present in the project root directory, *index.apf*
 will take precedence. If the latter is not present, one is chosen at random.
 
+### checking results manually
+
+Newly made studies are always saved to a publicly available path to allow 
+users to check out the results manually. This path depends on the platform:
+
+| Platform      | Location      |
+| -------------:|:------------- |
+| Windows       | C:/Users/\<USER\>/AppData/Local/apexstudies |
+| Linux         | ~/.local/share/apexstudies |
+| Android       | \<USER\>/apexstudies |
+   
+The SSH private and public key used to link the study are saved to the old, 
+more obscured save path. Note that old studies may still linger around 
+this path. If such studies still contain unsaved data you can retrieve them 
+by manually navigating to their location and copying the data to the new study 
+folder. This path varies depending on the way Apex was installed and which 
+folders were available when initializing. The most common paths are:
+
+| Platform      | Location      |
+| -------------:|:------------- |
+| Windows       | C:/Users/\<USER\>/AppData/Roaming/apex/share/studymanager |
+| Android       | data/data/be.kuleuven.med.exporl.apex/files/studymanager |
+   
+Note that this path cannot be accessed directly on an android device. To 
+reach it, you must use either Apex' own file explorer, or connect your 
+device to a pc with Android Studio (or at least adb utilities).
+
+New results are always saved to the results folder of their respective studies. 
+Even if the user tries to manipulate the save path in for example a flowrunner,
+only the name of the save file will be carried over while the folder is locked 
+to the intended results folder. This is to make sure that private study results
+do not wind up outside the study folder, where they cannot be synced.
+
+
 ### fetching results
 
 Fetching the results is somewhat complex because the result branches don't have
